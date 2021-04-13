@@ -7,6 +7,10 @@ import App from './App.vue'
 import  store from  './store/index.js'
 // app.use(store) 可以写在下面一起注册
 
+// TODO 导入 vue-router
+import  router from './router/index.js'
+// app.use(router)  可以写在下面一起注册
+
 // TODO 注册新的实例(并注册 vuex )
-createApp(App).use(store).mount('#app',)
+createApp(App).use(store).use(router).mount('#app')
 

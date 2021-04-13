@@ -19,6 +19,9 @@ export  default  defineComponent({
     sum:Number
   },
 
+
+
+
   // FIXME  props 是响应式的,当传入新的prop时,它将被更新  (props不能解构,如果要解构的话需要用 toRefs) ,toRefs
   //  const { title }  = toRefs(props)
   // FIXME  context 中有三个属性, attrs( Attribute 非响应式对象)、slots(插槽 非响应式对象)、emit(触发事件 方法)
@@ -39,7 +42,7 @@ export  default  defineComponent({
 
     // FIXME 子组件更新父组件传过来的数据
     const updateNumRef = ()=> {
-      console.log(numRef.value) //  <i  nput type="text" :value="num" ref="numRef" @input="updateNumRef"/>
+      console.log(numRef.value) //  <input type="text" :value="num" ref="numRef" @input="updateNumRef"/>
       console.log(numRef.value.value) // 887
 
     // FIXME 利用上下文 context对象中的emit方法  触发事件

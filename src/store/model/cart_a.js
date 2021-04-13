@@ -2,14 +2,21 @@
 
 // FIXME state.count
 const state = {
-    count:123
+    count:123,
+    token:'',
 }
 
 // FIXME mutations count
 const mutations = {
     addOne(state,info) {
         state.count+= info
+    },
+
+    addToken(state,info) {
+        state.token+= info
     }
+
+
 }
 
 // FIXME  actions count
